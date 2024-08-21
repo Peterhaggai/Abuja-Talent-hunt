@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participate Now | Abuja Talent Hunt</title>
+    <link rel="stylesheet" href="Participate-Now-styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Participate in Abuja Talent Hunt Competitions</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html #explore">Explore Talents</a></li>
+                    <li><a href="compit.html">Competitions</a></li>
+                    <li><a href="Sponsor.html">Sponsorship</a></li>
+                    <li><a href="idex.html #contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Participation Form Section -->
+    <section id="participate-now">
+        <div class="container">
+            <h2>Join the Competition</h2>
+            <p>Fill out the form below to participate in the competition and showcase your talents. Make sure to upload all necessary files and provide accurate information.</p>
+
+            <form id="participation-form" action="submit_form.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Brief Bio:</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself and your talents..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Competition Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>Select a category</option>
+                        <option value="fashion_design">Fashion Design</option>
+                        <option value="music">Music</option>
+                        <option value="art_drawing">Art Drawing</option>
+                        <option value="hair_making">Hair Making</option>
+                        <option value="shoe_making">Shoe Making</option>
+                        <!-- Add more categories as needed -->
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="submission">Upload Your Submission:</label>
+                    <input type="file" id="submission" name="submission" accept=".jpg,.jpeg,.png,.pdf" required>
+                    <small>Accepted formats: JPG, PNG, PDF. Max size: 10MB.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Design/Work Description:</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Describe your work and the inspiration behind it..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required> I agree to the <a href="terms.html" target="_blank">terms and conditions</a>.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Submit Your Entry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Abuja Indigenous Talent Hunt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
